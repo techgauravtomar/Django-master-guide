@@ -1,0 +1,16 @@
+{% include 'header.html' %}
+
+
+<div>
+    {% if object.id is not None %}
+    <li>First Name: {{object.name}}</li>
+    <li>Email: {{object.email}}</li>
+    {% else %}
+    <h3>Detail not found</h3>
+    {% endif %}
+</div>
+
+
+{% include 'footer.html' %}
+
+ 

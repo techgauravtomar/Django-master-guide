@@ -1,0 +1,28 @@
+{% include  'header.html' %}
+
+
+<div class="container">
+    <table class="table table-hover table-striped">
+     <thead>
+     <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Action</th>
+     </tr>
+     </thead>
+     <tbody>
+            {% for Employee in data %}
+         <tr>
+             <td>{{Employee.id}}</td>
+             <td>{{Employee.name}}</td>
+             <td>{{Employee.email}}</td>
+             <td><span><a href="/updatedetail/{{Employee.id}}">Edit</a>
+             <a href="/deletedetail/{{Employee.id}}">Delete</a></span></td>
+         </tr>
+            {% endfor %}
+     </tbody>
+ </table>  
+</div>  
+
+{%include 'footer.html'%}

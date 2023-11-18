@@ -1,0 +1,13 @@
+{% include 'header.html' %}
+<div class="container">
+    <h3>thanks for registration</h3>
+    <h3>Name:{{name}}</h3>
+    <h3>Email:{{email}}</h3>
+    <br>
+    <form>
+        <button type="submit" herf="{% url 'updatedetail'%}">edit</button>
+        <button type="submit" herf="{% url 'deletedetail'%}">delete<button>
+    </form>
+ 
+</div>
+{% include 'footer.html'%}

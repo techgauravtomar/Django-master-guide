@@ -1,0 +1,11 @@
+{% include 'header.html' %}
+
+<div>
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{form}}
+        <br>
+        <button class="btn-primary" type="submit">Submit</button>
+
+    </form>
+</div>

@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    height: 500px;
+    width: 100%;
+}
+.main-1{
+    height: 90px;
+    width:1200px;
+    background-color:rgb(45, 45, 104);
+    margin-left:65px; 
+    margin-top:30px; 
+}
+.span-1{
+    color:white; 
+    margin-top:100px; 
+    margin-left:30px;
+    border:red 2px solid
+}

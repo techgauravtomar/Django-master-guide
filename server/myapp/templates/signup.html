@@ -1,0 +1,31 @@
+{% include 'header.html' %}
+
+
+
+<h1 style="text-align: center;">Singup Here</h1>
+<div class="container">
+     <div style="width: 50%; margin-left:300px;">
+        <form method="POST">
+         {% csrf_token %}
+            {{form}}
+            <br><br>
+            <button type="submit">Submit</button>
+        </form>
+     </div>`
+</div>
+
+
+{% include 'footer.html' %}
+
+
+
+
+
+
+
+
+
+
+
+
+{% include 'footer.html'%}

@@ -1,0 +1,14 @@
+{% include 'header.html'  %}
+
+ <div>
+    <ul>
+       {% for object in object_list %}
+        <li>First Name: {{object.name}}</li>
+        <li>First Name: {{object.email}}</li>
+        {% empty %}
+        <li class="nav-item">No Object Found</li>
+        {% endfor %}
+    </ul>
+ </div>
+
+ {% include 'footer.html' %}
